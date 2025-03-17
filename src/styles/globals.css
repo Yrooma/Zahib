@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem; /* Add padding for fixed header */
+    direction: rtl;
+  }
+
+  body {
+    @apply font-tajawal text-text-dark bg-secondary overflow-x-hidden;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold mb-sm leading-tight;
+  }
+
+  p {
+    @apply mb-sm;
+  }
+
+  a {
+    @apply text-primary no-underline transition-all duration-fast;
+  }
+
+  a:hover {
+    @apply text-text-dark;
+  }
+
+  ul {
+    @apply list-none;
+  }
+
+  img {
+    @apply max-w-full h-auto;
+  }
+
+  section {
+    @apply py-lg;
+  }
+}
+
+@layer components {
+  .container {
+    @apply w-[90%] max-w-[1200px] mx-auto px-sm;
+  }
+
+  .section-heading {
+    @apply text-center mb-lg relative text-4xl;
+  }
+
+  .section-heading::after {
+    content: '';
+    @apply block w-[50px] h-[3px] bg-primary mx-auto mt-sm;
+  }
+
+  .glass-effect {
+    @apply bg-glass-bg backdrop-blur-md border border-glass-border shadow-lg rounded-md p-md transition-all duration-medium;
+  }
+
+  .glass-effect:hover {
+    @apply shadow-xl -translate-y-1;
+  }
+
+  .cta-button {
+    @apply inline-block bg-primary text-text-light py-sm px-md rounded-sm font-bold uppercase tracking-wider transition-all duration-fast;
+  }
+
+  .cta-button:hover {
+    @apply bg-text-light text-primary -translate-y-1 shadow-lg;
+  }
+}
+
+@layer utilities {
+  .fade-in-1 { animation-delay: 0.2s; }
+  .fade-in-2 { animation-delay: 0.4s; }
+  .fade-in-3 { animation-delay: 0.6s; }
+  .fade-in-4 { animation-delay: 0.8s; }
+}
