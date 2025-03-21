@@ -29,7 +29,7 @@ const Testimonials: React.FC = () => {
       
       const x = e.touches[0].pageX;
       const distance = startX - x;
-      container.scrollLeft = startScrollLeft + distance;
+      container.scrollLeft = startScrollLeft + distance / 2;
       
       // Prevent page scrolling when swiping testimonials
       if (Math.abs(distance) > 10) {
@@ -46,7 +46,7 @@ const Testimonials: React.FC = () => {
     const handleWheel = (e: WheelEvent) => {
       if (e.deltaY !== 0) {
         e.preventDefault();
-        container.scrollLeft += e.deltaY;
+        container.scrollLeft += e.deltaY / 2;
       }
     };
 

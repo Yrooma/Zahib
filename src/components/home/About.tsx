@@ -11,16 +11,16 @@ const About: React.FC = () => {
   ];
 
   return (
-    <section id="about">
+    <section id="about" className="bg-[url('/image3.png')] bg-cover bg-center">
       <div className="container">
         <h2 className="section-heading">من نحن</h2>
-        <div className="glass-effect grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-md">
+        <div className="glass-effect grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-md bg-white/30 backdrop-blur-sm">
           <div>
             <h3 className="text-2xl mb-sm">قصة زاهي</h3>
             <p>
               نحن في زاهي للخياطة الرجالية الفاخرة نقدم مجموعة متنوعة من خدمات تفصيل وتصميم الأثواب الرجالية بأعلى معايير الجودة. من أبرز خدماتنا المميزة هي خدمة تفصيل وتصميم الثوب في 10 دقائق فقط، وهي خدمة فريدة من نوعها في المملكة العربية السعودية. تأسست زاهي بهدف توفير الوقت والجهد على عملائنا مع الحفاظ على أعلى معايير الجودة والفخامة.
             </p>
-            
+
             <h3 className="text-2xl mb-sm">لماذا تختار زاهي؟</h3>
             <ul className="features-list">
               {features.map((feature, index) => (

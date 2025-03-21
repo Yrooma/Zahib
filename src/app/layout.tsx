@@ -12,7 +12,7 @@ const tajawal = Tajawal({
 export const metadata: Metadata = {
   title: 'زاهي للخياطة الرجالية الفاخرة',
   description: 'نقدم خدمة تفصيل وتصميم الثوب في 10 دقائق فقط بالإضافة إلى تشكيلة متنوعة من خدمات الخياطة الرجالية الفاخرة في مدينة الطائف.',
-  keywords: 'زاهي, تفصيل ثوب, تصميم ثوب, الطائف, ثوب في 10 دقائق, خياطة سريعة, خياطة فاخرة, خياطة رجالية',
+  keywords: 'زاهي, تفصيل ثوب, تصميم ثوب, الطائف, ثوب في 10 دقائق, خياطة سريعة, خياطة فاخرة, خياطة رجالية, قطن, كتان, صوف, ثوب سعودي, ثوب خليجي, ثوب رسمي, ثوب مناسبات, ثوب زفاف, ثوب العيد, Saudi thobe, custom tailoring, men\'s fashion',
 };
 
 export default function RootLayout({
@@ -28,10 +28,15 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         />
+        <meta property="og:title" content="زاهي للخياطة الرجالية الفاخرة" />
+        <meta property="og:description" content="نقدم خدمة تفصيل وتصميم الثوب في 10 دقائق فقط بالإضافة إلى تشكيلة متنوعة من خدمات الخياطة الرجالية الفاخرة في مدينة الطائف." />
+        <meta property="og:image" content="https://zahib.vercel.app/og.png" />
+        <meta property="og:url" content="https://zahib.vercel.app/" />
+        <meta property="og:type" content="website" />
       </head>
       <body>
         {children}
-        
+
         {/* Structured data for SEO */}
         <Script
           id="structured-data"

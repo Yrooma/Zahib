@@ -81,7 +81,7 @@ const Contact: React.FC = () => {
               </li>
               <li className="mb-sm flex items-center">
                 <i className="fas fa-phone ml-sm text-primary text-xl w-5 text-center"></i>
-                <span>+966533341139</span>
+                <span dir="ltr">+966533341139</span>
               </li>
               <li className="mb-sm flex items-center">
                 <i className="fas fa-envelope ml-sm text-primary text-xl w-5 text-center"></i>
@@ -93,12 +93,11 @@ const Contact: React.FC = () => {
               </li>
             </ul>
             
-            <div className="mt-md">
+            <div className="mt-md ">
               <h4 className="text-lg mb-xs">تابعنا على</h4>
               <SocialIcons />
             </div>
           </div>
-          
           {/* Contact Form */}
           <div className="glass-effect">
             <h3 className="text-2xl mb-sm">تواصل معنا عبر واتساب</h3>
