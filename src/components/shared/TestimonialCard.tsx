@@ -9,7 +9,7 @@ interface TestimonialCardProps {
 
 const TestimonialCard: React.FC<TestimonialCardProps> = ({ name, location, text, image }) => {
   return (
-    <div className="testimonial glass-effect min-w-[280px] flex-[0_0_85%] md:flex-[0_0_45%] lg:flex-[0_0_30%] transition-transform hover:-translate-y-1 relative">
+    <div className="testimonial glass-effect min-w-[280px] flex-[0_0_85%] md:flex-[0_0_45%] lg:flex-[0_0_30%] transition-transform hover:-translate-y-1 relative ring-1 ring-gray-200 ring-opacity-50">
       <div className="absolute top-sm right-sm text-2xl text-primary opacity-20">
         <i className="fas fa-quote-right"></i>
       </div>
@@ -19,7 +19,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ name, location, text,
       </div>
       
       <div className="flex items-center">
-        <div className={`w-[50px] h-[50px] rounded-full ml-sm overflow-hidden flex items-center justify-center bg-accent ${!image ? 'placeholder' : ''}`}>
+        <div className={`w-[50px] h-[50px] rounded-full ml-sm overflow-hidden flex items-center justify-center bg-accent ${!image ? 'placeholder' : ''} ring-1 ring-gray-200 ring-opacity-50`}>
           {image ? (
             <img src={image} alt={name} className="w-full h-full object-cover" />
           ) : (

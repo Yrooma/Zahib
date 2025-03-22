@@ -6,7 +6,7 @@
   html {
     font-size: 16px;
     scroll-behavior: smooth;
-    scroll-padding-top: 5rem; /* Add padding for fixed header */
+    scroll-padding-top: 7rem; /* Increased padding for fixed header + announcement bar */
     direction: rtl;
   }
 
@@ -114,4 +114,17 @@
   100% {
     background-position: -200% 0;
   }
+}
+
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.animate-rotate {
+  animation: rotate 20s linear infinite;
 }

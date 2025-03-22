@@ -14,7 +14,7 @@ const About: React.FC = () => {
     <section id="about" className="bg-[url('/image3.png')] bg-cover bg-center">
       <div className="container">
         <h2 className="section-heading">من نحن</h2>
-        <div className="glass-effect grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-md bg-white/30 backdrop-blur-sm">
+        <div className="glass-effect grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-md bg-white/30 backdrop-blur-sm ring-1 ring-gray-200 ring-opacity-50">
           <div>
             <h3 className="text-2xl mb-sm">قصة زاهي</h3>
             <p>

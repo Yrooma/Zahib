@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Hero: React.FC = () => {
   return (
-    <section id="hero" className="flex items-center justify-center h-screen bg-[url('/image.png')] bg-cover bg-center text-text-light text-center mt-[70px]">
+    <section id="hero" className="flex items-center justify-center h-screen bg-[url('/image.png')] bg-cover bg-center text-text-light text-center mt-[102px]">
       <div className="container">
         <div className="glass-effect max-w-[600px] mx-auto flex flex-col gap-md bg-black/30">
           <div className="pb-sm">

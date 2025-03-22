@@ -8,8 +8,8 @@ interface ServiceStepProps {
 
 const ServiceStep: React.FC<ServiceStepProps> = ({ number, title, description }) => {
   return (
-    <div className="glass-effect flex items-start">
-      <div className="bg-primary text-text-light w-10 h-10 rounded-full flex items-center justify-center font-bold ml-sm flex-shrink-0">
+    <div className="glass-effect flex items-start ring-2 ring-gray-200 ring-opacity-50">
+      <div className="bg-primary text-text-light w-10 h-10 rounded-full flex items-center justify-center font-bold ml-sm flex-shrink-0 ">
         {number}
       </div>
       <div className="flex-grow">
