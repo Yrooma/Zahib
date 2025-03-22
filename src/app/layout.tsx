@@ -33,6 +33,7 @@ export default function RootLayout({
         <meta property="og:image" content="https://zahib.vercel.app/og.png" />
         <meta property="og:url" content="https://zahib.vercel.app/" />
         <meta property="og:type" content="website" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
       </head>
       <body>
         {children}
