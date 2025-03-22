@@ -83,7 +83,7 @@ const Testimonials = () => {
           </button>
 
           {/* Testimonials Slider */}
-          <div className="overflow-visible">
+          <div className="overflow-hidden">
             <div 
               className="flex transition-transform duration-500 ease-out"
               style={{
